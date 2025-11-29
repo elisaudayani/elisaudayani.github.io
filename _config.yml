@@ -3,6 +3,7 @@ subtitle: "Reading genomes pays the bills, but reading myself is the real work. 
 description: "Blog by Udayani"
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"
 
 # Enable plugins that GitHub Pages supports
 plugins:
