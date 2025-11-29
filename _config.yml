@@ -9,9 +9,10 @@ minimal_mistakes_skin: "default"
 plugins:
   - jekyll-include-cache
 
-# Enable header navigation
-navigation:
-  enabled: true
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 # Minimal Mistakes settings
 markdown: kramdown
