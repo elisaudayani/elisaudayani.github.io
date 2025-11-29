@@ -1,0 +1,27 @@
+title: "✨ Udayani Menulis"
+subtitle: "My Writing Journey"
+description: "Blog by Udayani"
+theme: minimal-mistakes-jekyll
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Enable plugins that GitHub Pages supports
+plugins:
+  - jekyll-include-cache
+
+# Minimal Mistakes settings
+markdown: kramdown
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+author:
+  name: "Udayani"
+  bio: "Reading genomes pays the bills, but reading myself is the real work. Welcome to the place where I process life in sentences instead of sequences."
