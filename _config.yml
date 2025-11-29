@@ -36,3 +36,6 @@ defaults:
 author:
   name: "Udayani"
   bio: "Tracing patterns in data and in life. I tell stories and explore meaning."
+
+header:
+  show_main: true
