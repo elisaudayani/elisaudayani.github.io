@@ -1,0 +1,69 @@
+/* LIGHT VINTAGE DESIGN OVERHAUL */
+
+/* 1. Reset base canvas and remove theme overlays */
+html, body, .theme-base {
+  background-color: #f4f1ea !important; /* Aged Paper / Cream */
+  background-image: none !important;    /* Removes the muddy texture from image_0a3d66.jpg */
+  color: #2c2c2c !important;            /* Readable charcoal text */
+  font-family: 'Courier New', 'Courier New', Courier, monospace !important;
+  font-weight: 800; /* Elegant classic font */
+}
+
+/* 2. Fix the header area */
+.header {
+  background-color: #f4f1ea !important;
+}
+
+/* Make the top logo box look like a leather/wax stamp */
+.logo {
+  background-color: #8b4513 !important; /* Deep leather brown */
+  color: #f4f1ea !important;            /* Cream text */
+  padding: 5px 10px !important;
+  border-radius: 0px !important;
+}
+
+/* 3. Navigation Links & Tags */
+.menu a, .logo a {
+  color: #8b4513 !important;
+}
+
+a, .post-tags a {
+  color: #8b4513 !important;
+  text-decoration: underline !important;
+}
+
+/* 4. Main Titles and Dividers */
+h1, h2, h3, .post-title {
+  color: #8b4513 !important;
+}
+
+/* Change the dashed lines from orange to a soft brown divider */
+.post-title, .posts-list-item-title {
+  border-bottom: 2px dashed #d3cec4 !important;
+}
+
+/* 5. Clean up the footer text */
+.footer {
+  color: #a0998c !important;
+  background-color: #f4f1ea !important;
+}
+.footer a {
+  color: #8b4513 !important;
+}
+
+/* 6. Subtle, clean texture (Optional) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
+  opacity: 0.15; /* Extremely subtle lines so it doesn't block text */
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Fix the invisible post date from image_005f3d.png */
+.post-date, .post-meta {
+  color: #8b4513 !important; /* Matches the leather brown accent */
+  opacity: 0.8;
+}

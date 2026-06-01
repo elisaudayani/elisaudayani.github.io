@@ -1,0 +1,26 @@
+baseURL = 'https://elisaudayani.github.io/'
+locale = 'en-us'
+title = 'Udayani Menulis'
+theme = 'terminal'
+
+[params]
+  themeColor = "green" 
+  contentTypeName = "posts"
+  
+  # This tells the theme to look inside the /assets/ folder instead of /static/
+  extendedCSS = ["css/extended.css"]
+  readMoreText = ""
+
+  [params.logo]
+    logoText = "Udayani Menulis"
+    logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Archive"
+    url = "/posts"
+    weight = 2
