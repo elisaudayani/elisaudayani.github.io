@@ -67,3 +67,14 @@ body::before {
   color: #8b4513 !important; /* Matches the leather brown accent */
   opacity: 0.8;
 }
+
+/* Make the layout wider/full-screen on PC screens */
+.container {
+  max-width: 95% !important; /* Forces the content wrapper to use almost the full screen */
+  width: 100% !important;
+}
+
+/* Optional: Make the individual posts wider inside the wrapper */
+.content {
+  max-width: 100% !important;
+}
