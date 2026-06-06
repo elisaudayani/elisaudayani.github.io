@@ -68,13 +68,18 @@ body::before {
   opacity: 0.8;
 }
 
-/* Make the layout wider/full-screen on PC screens */
-.container {
-  max-width: 95% !important; /* Forces the content wrapper to use almost the full screen */
+/* Real Full Screen Fix for Terminal Theme */
+.content, 
+.wrapper,
+main,
+header,
+footer,
+div[class^="container"] {
+  max-width: 95% !important;
   width: 100% !important;
 }
 
-/* Optional: Make the individual posts wider inside the wrapper */
-.content {
-  max-width: 100% !important;
+/* Ensure the layout block doesn't box it in */
+.theme-base .wrapper {
+  max-width: 95% !important;
 }
