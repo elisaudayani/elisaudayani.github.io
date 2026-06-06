@@ -19,9 +19,10 @@
       <span class="post-reading-time">{{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }} ({{ .WordCount }} {{ $.Site.Params.words | default "words" }})</span>
     {{- end -}}
   </div>
+
   <div class="post-views" style="margin-top: 0.8rem; margin-bottom: 1rem;">
-  <img src="https://api.visitorbadge.io/api/VisitorHit?user=elisaudayani&repo=elisaudayani.github.io&countColor=%237a6048" alt="Views Counter" />
-</div>
+    <img src="{{ "https://api.visitorbadge.io/api/VisitorHit?user=elisaudayani&repo=elisaudayani.github.io&countColor=%237a6048" | safeURL }}" alt="Views Counter" />
+  </div>
 
   {{ if .Params.tags }}
     <span class="post-tags">
